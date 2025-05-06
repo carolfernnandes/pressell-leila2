@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aguarde...</title>
+    <!-- Pixel do Facebook -->
+    <script>
+        !function(f,b,e,v,n,t,s) {
+            if(f.fbq) return; n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq) f._fbq=n; n.push=n; n.loaded=!0; n.version='2.0';
+            n.queue=[]; t=b.createElement(e); t.async=!0;
+            t.src=v; s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);
+        }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1276958433759152'); // Substitua com seu Pixel ID do Facebook
+        fbq('track', 'PageView');
+    </script>
+
+    <!-- Estilos CSS -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            text-align: center;
+        }
+        .loading-icon {
+            margin-top: 20px;
+            border: 6px solid #f3f3f3;
+            border-top: 6px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .message {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="message">Aguarde alguns segundos...</p>
+        <div class="loading-icon"></div>
+    </div>
+
+    <script>
+        // Redireciona após 3 segundos
+        setTimeout(function() {
+            window.location.href = "https://wa.me/558881072522?text=Ol%2C%20tudo%20bem%3F";
+        }, 3000);
+    </script>
+</body>
+</html>
